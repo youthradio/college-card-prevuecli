@@ -20,6 +20,7 @@
   
   <body>
       <div class="imgcontainer">
+        <div>Testing testing</div>
         <img src="https://cdn.glitch.com/7247cc81-a875-497f-8f35-d73c2e3eba90%2Ffrontimg.png?v=1565220261736" class="images">
     </div>
     
@@ -30,7 +31,7 @@
         </h1>
       </header> -->
       <article>
-        <template v-if="showResult == false">
+        <template>
           <button v-if="isReadyToResult" @click="processResult" class="result-button sticky">
             See Result
           </button>
@@ -187,14 +188,14 @@
               It was a jarring experience because I had never been asked to reflect on myself in that way. 
               But I’m glad I did because after it all ended and I decided where I was going to go, I felt like I knew myself a lot better and had more confidence to pursue my goals. 
             </div>
-          </div>
-        </template>
-        <template v-else>
+            <div id="result" v-if="showResult == true">
           <ul>
             <li v-for="statement in resultStatements">
               {{ statement }}
             </li>
           </ul>
+        </div>
+          </div>
         </template>
       </article>
     </div>
