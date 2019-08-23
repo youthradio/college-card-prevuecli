@@ -5,6 +5,28 @@ html,body{
   	font-family: 'Assistant', sans-serif;
 }
 
+.result-button{
+	position: fixed;
+
+	left: calc(100% - 100px);
+	top: 10px;
+
+	padding: 10px;
+  	border-radius: 80px;
+  	width: 80px;
+  	height: 80px;
+  	text-align: center;
+  	/* word-break: break-word; */
+  	font-size: 1em;
+  	box-shadow: 3px 3px #00000070;
+}
+.result-button:active{
+  	box-shadow: 0px 0px #00000070;
+}
+.result-button:hover{
+  	box-shadow: 1px 1px #00000070;
+}
+
 .images{
   width: 100%;
   height: 80vh;
@@ -13,10 +35,27 @@ html,body{
 
 .questions .centertext{
 	text-align: left;
-	padding: 0px 0 10px 0;
+	padding: 0px 0 20px 0;
 }
 
 .container {
-	max-width: 70%;
+	max-width: 60%;
 	margin: 0 auto;
 }
+
+
+div[role="break-question"]{
+	padding: 5px 20% 5px 20%;
+	margin: 0px 0 20px 0px;
+}
+
+div[role="break-question"] label{
+	display: block;
+}
+
+#firstquestion {background-color: #1affa3;}
+#secondquestion {background-color: #ffff80;}
+#thirdquestion {background-color: #ff9966;}
+#fourthquestion {background-color: #ff6699;}
+#fifthquestion {background-color: #8080ff;}
+#sixthquestion {background-color: #66a3ff;}
