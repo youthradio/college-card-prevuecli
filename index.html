@@ -187,6 +187,18 @@
               </label>
             </p>
           </div>
+          <strong>Academic Pace</strong>
+          <div role="break-question" id="sixthquestion">
+            <h3 class="questionstyle">
+            {{ questionsData[5].topic }}
+            </h3>
+            <p>
+              <label v-for="option in questionsData[5].options">
+                <input :name="questionsData[5].topic" type="radio" v-model="answeredQuestions[5]" v-bind:value="option">
+                <span>{{ option.option }}</span>
+              </label>
+            </p>
+          </div>
           
           
           <div class="centertext">
