@@ -40,8 +40,7 @@ new Vue({
       this.isReadyToResult = true;
     },
     showResult(){
-      if (this.showResult){
-      a.scrollIntoView();}
+
     }
   },
   computed:{
@@ -67,6 +66,10 @@ new Vue({
     },
     processResult(){
       this.showResult = true;
+      console.log(this.refs);
+      // nextTick() waits for the next update cycle, very useful for focusing on new DOM objects.
+      Vue.nextTick(() => this.$refs.result.scrollIntoView({behavior: 'smooth'}));
+
     }
   },
 })

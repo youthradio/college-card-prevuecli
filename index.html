@@ -194,7 +194,8 @@
             It was a jarring experience because I had never been asked to reflect on myself in that way.
             But I’m glad I did because after it all ended and I decided where I was going to go, I felt like I knew myself a lot better and had more confidence to pursue my goals.
           </div>
-          <div id="result" v-if="showResult == true">
+          <div ref="result">
+          <div v-if="showResult == true">
             <h1> Here's what you said... </h1>
             <ul>
               <li v-for="statement in resultStatements">
@@ -203,8 +204,9 @@
             </ul>
           </div>
         </div>
+        </div>
 
-        
+
 
         </template>
       </article>

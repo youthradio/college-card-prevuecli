@@ -44,6 +44,10 @@ html,body{
 	text-decoration-color: black;
 	color: #00B5C3;
 }
+.metaLeft h5{
+	font-weight: 100;
+	font-style: italic;
+}
 .metaRight{
 	text-align: right;
 	margin: 5%;
