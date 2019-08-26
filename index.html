@@ -39,9 +39,6 @@
       </header> -->
       <article>
         <template>
-        <button v-if="isReadyToResult" @click="processResult" class="result-button sticky">
-        See Result
-        </button>
         <div class="questions">
           <div class="centertext">
             For my entire life, I’ve been asked to write about everything from the American Revolution to the Atomic Theory. The one thing I was never asked to write about was myself.
@@ -184,6 +181,13 @@
             It was a jarring experience because I had never been asked to reflect on myself in that way.
             But I’m glad I did because after it all ended and I decided where I was going to go, I felt like I knew myself a lot better and had more confidence to pursue my goals.
           </div>
+
+          <div class="buttonContainer">
+          <button v-if="isReadyToResult" @click="processResult" class="result-button sticky">
+        See Result
+        </button>
+      </div>
+
           <div ref="result">
           <div v-if="showResult == true">
             <h1> Here's what you said... </h1>

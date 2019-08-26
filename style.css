@@ -5,18 +5,17 @@ html,body{
   	font-family: 'Assistant', sans-serif;
 }
 
+.buttonContainer{
+	display: flex;
+	justify-content: center;
+	padding: 20px
+}
 .result-button{
-	position: fixed;
-
-	left: calc(100% - 100px);
-	top: 10px;
-
 	padding: 10px;
   	border-radius: 80px;
   	width: 80px;
   	height: 80px;
   	text-align: center;
-  	/* word-break: break-word; */
   	font-size: 1em;
   	box-shadow: 3px 3px #00000070;
 }
