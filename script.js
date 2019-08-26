@@ -59,6 +59,7 @@ new Vue({
       console.log(data)
       this.questionsData =  data.map( e => ({
         topic: e.key,
+        headline: e.values[0] ? e.values[0].Headline : '', 
         options: e.values.map(o => ({
           option: o.OPTIONS,
           response: o.RESPONSES  
