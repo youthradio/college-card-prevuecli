@@ -58,17 +58,7 @@
           <div class="centertext">
             Follow along on my journey, and do some self-discovery of your own.
           </div>
-          <div role="break-question"  id="firstquestion">
-            <h3 class="questionstyle">
-            {{ questionsData[6].topic }}
-            </h3>
-            <p>
-              <label v-for="option in questionsData[6].options">
-                <input :name="questionsData[6].topic" type="radio" v-model="answeredQuestions[6]" v-bind:value="option">
-                <span>{{ option.option }}</span>
-              </label>
-            </p>
-          </div>
+          
           
           
           <div class="centertext">
@@ -183,18 +173,6 @@
             <p>
               <label v-for="option in questionsData[2].options">
                 <input :name="questionsData[2].topic" type="radio" v-model="answeredQuestions[2]" v-bind:value="option">
-                <span>{{ option.option }}</span>
-              </label>
-            </p>
-          </div>
-          <strong>Academic Pace</strong>
-          <div role="break-question" id="sixthquestion">
-            <h3 class="questionstyle">
-            {{ questionsData[5].topic }}
-            </h3>
-            <p>
-              <label v-for="option in questionsData[5].options">
-                <input :name="questionsData[5].topic" type="radio" v-model="answeredQuestions[5]" v-bind:value="option">
                 <span>{{ option.option }}</span>
               </label>
             </p>
