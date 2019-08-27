@@ -81,12 +81,32 @@ html,body{
 	margin: 0 auto;
 }
 
-
-div[role="break-question"]{
-	padding: 5px 10% 5px 10%;
+.resultDiv{
+	padding: 10% 10% 10% 10%;
 	margin: 0px 0 20px 0px;
+
+	border: 3px #000 solid;
+	border-radius: 8px;
+	box-shadow: 4px 4px #000;
+
+	background-color: #1affa3;
 }
 
+.resultDiv:before{
+	content: "";
+	padding: 20px;
+	background: center / contain no-repeat url("https://s3.amazonaws.com/media.youthradio.org/wp-content/uploads/2018/10/15170810/YR-MEDIA-LOGo_1400.png");
+
+	display: flex;}
+
+
+div[role="break-question"]{
+	padding: 10% 10% 10% 10%;
+	margin: 0px 0 20px 0px;
+
+	border: 1px #000 solid;
+
+}
 div[role="break-question"] label{
 	display: block;
 }
