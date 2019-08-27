@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    <!-- import the webpage's javascript file -->
-    <link rel="stylesheet" href="https://yr.media/statics/yr-media-typography/yr-typography.css">
+    <link media="print" rel="stylesheet" href="print.css">
+    <link media="screen" rel="stylesheet" href="/style.css">
+    <link media="screen" rel="stylesheet" href="https://yr.media/statics/yr-media-typography/yr-typography.css">
     <script src="https://unpkg.com/vue"></script>
     <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
     <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
@@ -73,7 +73,7 @@
             <h3 class="questionstyle">
             {{ questionsData[4].headline }}
             </h3>
-            <p>
+            <p class="pre-input">
               <label v-for="option in questionsData[4].options">
                 <input :name="questionsData[4].topic" type="radio" v-model="answeredQuestions[4]" v-bind:value="option">
                 <span>{{ option.option }}</span>
@@ -94,7 +94,7 @@
             <h3 class="questionstyle">
             {{ questionsData[1].headline }}
             </h3>
-            <p>
+            <p class="pre-input">
               <label v-for="option in questionsData[1].options">
                 <input :name="questionsData[1].topic" type="radio" v-model="answeredQuestions[1]" v-bind:value="option">
                 <span>{{ option.option }}</span>
@@ -118,7 +118,7 @@
             <h3 class="questionstyle">
             {{ questionsData[0].headline }}
             </h3>
-            <p>
+            <p class="pre-input">
               <label v-for="option in questionsData[0].options">
                 <input :name="questionsData[0].topic" type="radio" v-model="answeredQuestions[0]" v-bind:value="option">
                 <span>{{ option.option }}</span>
@@ -143,7 +143,7 @@
             <h3 class="questionstyle">
             {{ questionsData[3].headline }}
             </h3>
-            <p>
+            <p class="pre-input">
               <label v-for="option in questionsData[3].options">
                 <input :name="questionsData[3].topic" type="radio" v-model="answeredQuestions[3]" v-bind:value="option">
                 <span>{{ option.option }}</span>
@@ -167,7 +167,7 @@
             <h3 class="questionstyle">
             {{ questionsData[2].headline }}
             </h3>
-            <p>
+            <p class="pre-input">
               <label v-for="option in questionsData[2].options">
                 <input :name="questionsData[2].topic" type="radio" v-model="answeredQuestions[2]" v-bind:value="option">
                 <span>{{ option.option }}</span>
@@ -196,9 +196,17 @@
                 {{ statement }}
               </li>
             </ul>
+
+            <div class="centertext finalText">Share your results through social media, or even printing for a counselor!</div> 
+
+            <div class="buttonArray">
+              <button id="makePrint">Print</button>
+            </div>
+
           </div>
         </div>
         </div>
+
 
 
 

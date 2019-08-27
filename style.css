@@ -108,7 +108,8 @@ html,body{
 	padding: 20px;
 	background: center / contain no-repeat url("https://s3.amazonaws.com/media.youthradio.org/wp-content/uploads/2018/10/15170810/YR-MEDIA-LOGo_1400.png");
 
-	display: flex;}
+	display: flex;
+}
 
 
 div[role="break-question"]{

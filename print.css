@@ -1,0 +1,43 @@
+.metaRight, .imgcontainer, .centertext, .buttonContainer{
+	display: none;
+}
+
+.metaLayer {
+	text-align: center;
+}
+
+.questions .centertext{
+	text-align: left;
+	padding: 0px 0 20px 0;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+div[role="break-question"]{
+	padding: 10% 10% 10% 10%;
+	margin: 0px 0 20px 0px;
+	display: none;
+}
+div[role="break-question"] label{
+	display: none;
+}
+
+.resultDiv{
+	padding: 5% 10% 5% 10%;
+	margin: 0px 0 20px 0px;
+
+	border: 3px #000 solid;
+	border-radius: 8px;
+
+	transform: scale(0.8) scaleZ(0.1) rotateX(0deg) rotateZ(0deg);
+}
+
+
+.resultDiv:before{
+	content: "";
+	padding: 20px;
+	background: center / contain no-repeat url("https://s3.amazonaws.com/media.youthradio.org/wp-content/uploads/2018/10/15170810/YR-MEDIA-LOGo_1400.png");
+	display: flex;
+}
