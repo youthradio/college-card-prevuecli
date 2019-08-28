@@ -72,6 +72,9 @@ new Vue({
       // nextTick() waits for the next update cycle, very useful for focusing on new DOM objects.
       Vue.nextTick(() => this.$refs.result.scrollIntoView({behavior: 'smooth'}));
 
+    },
+    printPage: function(){
+      window.print()
     }
   },
 })

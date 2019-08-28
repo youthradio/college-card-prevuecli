@@ -91,16 +91,9 @@ html,body{
 	box-shadow: 0px 0px #000;
 
 	background-color: #1affa3;
-
-	transform: scale(1.0) scaleZ(0.1) rotateX(0deg) rotateZ(0deg);
-	transform-origin: 0% 0%;
-	perspective: 1320;
 }
 
 .resultDiv:hover{
-	transition: all 0.4s;
-	box-shadow: 10px 10px 14px #000;
-	transform: scale(1.04) scaleZ(0.1) rotateX(0deg) rotateZ(3deg);
 }
 
 .resultDiv:before{
