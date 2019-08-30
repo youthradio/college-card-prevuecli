@@ -122,3 +122,16 @@ div[role="break-question"] label{
 #fourthquestion {background-color: #ff6699;}
 #fifthquestion {background-color: #8080ff;}
 #sixthquestion {background-color: #66a3ff;}
+
+@media screen and (max-width: 516px) {
+
+	.metaRight {
+		display: none;
+	}
+
+	.metaLayer {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+}
