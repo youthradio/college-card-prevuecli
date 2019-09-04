@@ -2,6 +2,7 @@
 // spreadsheet data, google shares a public web version based on the original document
 const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRaNDBN4NpVISkVvaKK_FPQSwRZorhpIKb0bsaPTm0gKwvVviTHvcpHJsr5erVrjpiPH9YZupinUljz/pub?gid=0&single=true&output=csv"
 const a = document.getElementById("result")
+let iFrameSize = document.documentElement.scrollHeight
 // this grabs the data and transform to a nice array of options, responses
 /*
 {
@@ -79,5 +80,8 @@ new Vue({
   },
 })
 
+window.addEventListener('resize', function(){
+  iFrameSize = document.documentElement.scrollHeight
+})
 
 
